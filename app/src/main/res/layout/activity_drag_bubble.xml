@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.example.uipractiseapp.drag_bubble.DragBubbleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bubble_radius="15dp"
+        app:bubble_color="@color/colorAccent"
+        app:bubble_text="9"
+        app:bubble_textColor="@color/white"
+        app:bubble_textSize="12sp"/>
+
+</LinearLayout>

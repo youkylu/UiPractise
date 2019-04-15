@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.uipractiseapp.pixel_adaption.ScreenAdapterLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="540px"
+        android:layout_height="960px"
+        android:background="@color/green"/>
+
+</com.example.uipractiseapp.pixel_adaption.ScreenAdapterLayout>
