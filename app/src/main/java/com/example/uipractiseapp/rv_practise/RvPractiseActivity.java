@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,9 +14,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.uipractiseapp.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.squareup.picasso.Picasso;
 
-public class RvPractiseActivity extends AppCompatActivity {
+public class RvPractiseActivity extends AppCompatActivity implements View.OnClickListener {
 
     private RecyclerView mRecyclerView;
     private FeedAdapter mFeedAdapter;
@@ -23,6 +25,7 @@ public class RvPractiseActivity extends AppCompatActivity {
     private RelativeLayout mSuspensionBar;
     private TextView mSuspensionTv;
     private ImageView mSuspensionIv;
+    private FloatingActionButton mFloatingActionButton;
 
     private int mSuspensionHeight;
     private int mCurrentPosition;
@@ -36,6 +39,10 @@ public class RvPractiseActivity extends AppCompatActivity {
         mSuspensionTv = findViewById(R.id.tv_nickname);
         mSuspensionIv = findViewById(R.id.iv_avatar);
         mRecyclerView = findViewById(R.id.recyclerView);
+        mFloatingActionButton = findViewById(R.id.rv_practise_fab);
+
+        mFloatingActionButton.setOnClickListener(this);
+
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(layoutManager);
         mFeedAdapter = new FeedAdapter();
@@ -97,5 +104,16 @@ public class RvPractiseActivity extends AppCompatActivity {
                 return R.drawable.avatar4;
         }
         return 0;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.rv_practise_fab:
+                Toast.makeText(this, "年级", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                break;
+        }
     }
 }
