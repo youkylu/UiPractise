@@ -28,6 +28,8 @@
     </activity>
         <activity android:name=".modify_density.ModifyDensityActivity">
         </activity>
+        <activity android:name=".rv_practise.RvPractiseActivity">
+        </activity>
 
     </application>
 

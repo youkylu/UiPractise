@@ -52,7 +52,12 @@
             android:gravity="center"
             android:id="@+id/modify_density"/>
 
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="rv练习"
+            android:gravity="center"
+            android:id="@+id/rv_practise_tv"/>
 
     </LinearLayout>
 </ScrollView>

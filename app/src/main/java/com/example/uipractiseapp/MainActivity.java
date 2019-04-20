@@ -10,12 +10,14 @@ import com.example.uipractiseapp.modify_density.ModifyDensityActivity;
 import com.example.uipractiseapp.path_measure.PathMeasureActivity;
 import com.example.uipractiseapp.percent_adaption.PercentAdaptionActivity;
 import com.example.uipractiseapp.pixel_adaption.PixelAdaptionActivity;
+import com.example.uipractiseapp.rv_practise.RvPractiseActivity;
 import com.example.uipractiseapp.splash_view.SplashActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView splashTv, dragBubbleTv, pathMeasureTv, pixelAdaptionTv, percentAdaptionTv, mModifyDensityTv;
+    private TextView rvPractiseTv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         pixelAdaptionTv = findViewById(R.id.pixel_adaption_tv);
         percentAdaptionTv = findViewById(R.id.percent_adaption_tv);
         mModifyDensityTv = findViewById(R.id.modify_density);
+        rvPractiseTv = findViewById(R.id.rv_practise_tv);
     }
 
     private void initListener() {
@@ -41,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         pixelAdaptionTv.setOnClickListener(this);
         percentAdaptionTv.setOnClickListener(this);
         mModifyDensityTv.setOnClickListener(this);
+        rvPractiseTv.setOnClickListener(this);
     }
 
     @Override
@@ -63,6 +67,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.modify_density:
                 startActivity(new Intent(this, ModifyDensityActivity.class));
+                break;
+            case R.id.rv_practise_tv:
+                startActivity(new Intent(this, RvPractiseActivity.class));
                 break;
             default:
                 break;
