@@ -59,5 +59,12 @@
             android:gravity="center"
             android:id="@+id/rv_practise_tv"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="沉浸式适配"
+            android:gravity="center"
+            android:id="@+id/immersive_tv"/>
+
     </LinearLayout>
 </ScrollView>

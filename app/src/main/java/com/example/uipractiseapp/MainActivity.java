@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.uipractiseapp.drag_bubble.DragBubbleActivity;
+import com.example.uipractiseapp.immersive.ImmersiveActivity;
 import com.example.uipractiseapp.modify_density.ModifyDensityActivity;
 import com.example.uipractiseapp.path_measure.PathMeasureActivity;
 import com.example.uipractiseapp.percent_adaption.PercentAdaptionActivity;
@@ -17,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView splashTv, dragBubbleTv, pathMeasureTv, pixelAdaptionTv, percentAdaptionTv, mModifyDensityTv;
-    private TextView rvPractiseTv;
+    private TextView rvPractiseTv, immersiveTv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         percentAdaptionTv = findViewById(R.id.percent_adaption_tv);
         mModifyDensityTv = findViewById(R.id.modify_density);
         rvPractiseTv = findViewById(R.id.rv_practise_tv);
+        immersiveTv = findViewById(R.id.immersive_tv);
     }
 
     private void initListener() {
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         percentAdaptionTv.setOnClickListener(this);
         mModifyDensityTv.setOnClickListener(this);
         rvPractiseTv.setOnClickListener(this);
+        immersiveTv.setOnClickListener(this);
     }
 
     @Override
@@ -70,6 +73,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.rv_practise_tv:
                 startActivity(new Intent(this, RvPractiseActivity.class));
+                break;
+            case R.id.immersive_tv:
+                startActivity(new Intent(this, ImmersiveActivity.class));
                 break;
             default:
                 break;
