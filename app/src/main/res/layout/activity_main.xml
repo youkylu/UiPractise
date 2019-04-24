@@ -66,5 +66,12 @@
             android:gravity="center"
             android:id="@+id/immersive_tv"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="自定义RecyclerView"
+            android:gravity="center"
+            android:id="@+id/my_rv_tv"/>
+
     </LinearLayout>
 </ScrollView>

@@ -33,6 +33,8 @@
         <activity android:name=".immersive.ImmersiveActivity"
             android:theme="@style/NewAppTheme">
         </activity>
+        <activity android:name=".my_rv.MyRecyclerViewActivity">
+        </activity>
     </application>
 
 </manifest>
