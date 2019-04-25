@@ -16,25 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".splash_view.SplashActivity">
-        </activity>
-        <activity android:name=".drag_bubble.DragBubbleActivity">
-        </activity>
-        <activity android:name=".path_measure.PathMeasureActivity">
-        </activity>
-        <activity android:name=".pixel_adaption.PixelAdaptionActivity">
-        </activity>
-        <activity android:name=".percent_adaption.PercentAdaptionActivity">
-    </activity>
-        <activity android:name=".modify_density.ModifyDensityActivity">
-        </activity>
-        <activity android:name=".rv_practise.RvPractiseActivity">
-        </activity>
-        <activity android:name=".immersive.ImmersiveActivity"
-            android:theme="@style/NewAppTheme">
-        </activity>
-        <activity android:name=".my_rv.MyRecyclerViewActivity">
-        </activity>
+        <activity android:name=".splash_view.SplashActivity"></activity>
+        <activity android:name=".drag_bubble.DragBubbleActivity"></activity>
+        <activity android:name=".path_measure.PathMeasureActivity"></activity>
+        <activity android:name=".pixel_adaption.PixelAdaptionActivity"></activity>
+        <activity android:name=".percent_adaption.PercentAdaptionActivity"></activity>
+        <activity android:name=".modify_density.ModifyDensityActivity"></activity>
+        <activity android:name=".rv_practise.RvPractiseActivity"></activity>
+        <activity
+            android:name=".immersive.ImmersiveActivity"
+            android:theme="@style/NewAppTheme"></activity>
+        <activity android:name=".my_rv.MyRecyclerViewActivity"></activity>
+        <activity android:name=".map_view.MapViewActivity"></activity>
     </application>
 
 </manifest>

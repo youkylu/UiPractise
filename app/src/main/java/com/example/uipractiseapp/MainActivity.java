@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.example.uipractiseapp.drag_bubble.DragBubbleActivity;
 import com.example.uipractiseapp.immersive.ImmersiveActivity;
+import com.example.uipractiseapp.map_view.MapViewActivity;
 import com.example.uipractiseapp.modify_density.ModifyDensityActivity;
 import com.example.uipractiseapp.my_rv.MyRecyclerViewActivity;
 import com.example.uipractiseapp.path_measure.PathMeasureActivity;
@@ -19,7 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView splashTv, dragBubbleTv, pathMeasureTv, pixelAdaptionTv, percentAdaptionTv, mModifyDensityTv;
-    private TextView rvPractiseTv, immersiveTv, myRvTv;
+    private TextView rvPractiseTv, immersiveTv, myRvTv,mMapView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rvPractiseTv = findViewById(R.id.rv_practise_tv);
         immersiveTv = findViewById(R.id.immersive_tv);
         myRvTv =findViewById(R.id.my_rv_tv);
+        mMapView = findViewById(R.id.my_map_tv);
     }
 
     private void initListener() {
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rvPractiseTv.setOnClickListener(this);
         immersiveTv.setOnClickListener(this);
         myRvTv.setOnClickListener(this);
+        mMapView.setOnClickListener(this);
     }
 
     @Override
@@ -82,6 +85,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.my_rv_tv:
                 startActivity(new Intent(this, MyRecyclerViewActivity.class));
+                break;
+            case R.id.my_map_tv:
+                startActivity(new Intent(this, MapViewActivity.class));
                 break;
             default:
                 break;

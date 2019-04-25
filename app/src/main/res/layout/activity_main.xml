@@ -72,6 +72,12 @@
             android:text="自定义RecyclerView"
             android:gravity="center"
             android:id="@+id/my_rv_tv"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="中国地图view"
+            android:gravity="center"
+            android:id="@+id/my_map_tv"/>
 
     </LinearLayout>
 </ScrollView>
